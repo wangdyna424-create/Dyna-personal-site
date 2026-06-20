@@ -1,0 +1,326 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dyna | 用自己的方式定义世界</title>
+  <meta name="description" content="Dyna 的个人作品集、半导体行业认知输出与互动空间。">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@500;700;900&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+  <nav class="site-nav" aria-label="主导航">
+    <a class="brand" href="#top">Dyna</a>
+    <div class="nav-links">
+      <div class="nav-item">
+        <a href="#self">如何定义我</a>
+        <div class="submenu">
+          <a href="#self">我与世界</a>
+          <a href="#logs">航海日志</a>
+          <a href="#photos">摄影作品</a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <a href="#silicon">硅与文明</a>
+        <div class="submenu">
+          <a href="#silicon">半导体故事</a>
+          <a href="#chip-map">元器件图鉴</a>
+          <a href="#civilization">文明地基</a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <a href="#free">纯粹空间</a>
+        <div class="submenu">
+          <a href="#free">格局沙盘</a>
+          <a href="#chip-quiz">芯片人格</a>
+          <a href="#quiet-writing">书写空间</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <aside class="quick-rail" aria-label="快捷侧栏">
+    <button type="button" data-drawer="toc">目录</button>
+    <button type="button" data-drawer="articles">文章</button>
+    <a href="mailto:320749629@qq.com">联系</a>
+  </aside>
+
+  <aside class="side-drawer" id="sideDrawer" aria-hidden="true">
+    <button class="drawer-close" id="drawerClose" type="button" aria-label="关闭侧栏">×</button>
+    <div id="drawerContent"></div>
+  </aside>
+
+  <main id="top">
+    <section class="hero warm-panel">
+      <div class="hero-media" aria-hidden="true"></div>
+      <div class="hero-copy">
+        <p class="eyebrow">王泽巨 · 半导体行业销售 · 写作者</p>
+        <h1>Dyna</h1>
+        <p class="tagline">用自己的方式定义世界</p>
+        <p class="hero-poem">让每一部分的我奔向世界<br>让每一路的电都流向文明</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#self">进入航海日志</a>
+          <a class="button ghost" href="#chip-map">查看芯片图鉴</a>
+        </div>
+      </div>
+      <a class="scroll-cue" href="#self" aria-label="向下浏览">↓</a>
+    </section>
+
+    <section id="self" class="section warm-section">
+      <div class="section-head">
+        <p class="eyebrow">01 · 如何定义我</p>
+        <h2>我与世界</h2>
+        <p>不是罗列兴趣，而是四种观察世界的方式：镜头、笔触、频率和想象。</p>
+      </div>
+
+      <section class="photo-gallery" id="photos" aria-label="摄影作品横向画廊">
+        <div class="gallery-head">
+          <div><p class="eyebrow">摄影作品</p><h3>向左，向右，看见世界</h3><p class="gallery-hint">点击任意画面，全幅查看原始构图</p></div>
+          <div class="gallery-controls">
+            <button class="gallery-control" id="galleryPrev" type="button" aria-label="查看上一张照片">←</button>
+            <span id="galleryCounter" aria-live="polite">01 / 14</span>
+            <button class="gallery-control" id="galleryNext" type="button" aria-label="查看下一张照片">→</button>
+          </div>
+        </div>
+        <div class="gallery-window" id="galleryWindow" tabindex="0" aria-label="可横向浏览的摄影作品">
+          <div class="gallery-track" id="galleryTrack">
+          <button class="gallery-slide" type="button" data-photo-src="assets/photos/世界之窗.JPG" data-photo-title="世界之窗" aria-label="全幅查看 世界之窗"><img src="assets/photos/世界之窗.JPG" alt="世界之窗摄影作品"><span class="gallery-slide-caption">世界之窗</span></button>
+          <button class="gallery-slide" type="button" data-photo-src="assets/photos/万家南山.JPG" data-photo-title="万家南山" aria-label="全幅查看 万家南山"><img src="assets/photos/万家南山.JPG" alt="万家南山摄影作品"><span class="gallery-slide-caption">万家南山</span></button>
+          <button class="gallery-slide" type="button" data-photo-src="assets/photos/遇见后海.jpg" data-photo-title="遇见后海" aria-label="全幅查看 遇见后海"><img src="assets/photos/遇见后海.jpg" alt="遇见后海摄影作品"><span class="gallery-slide-caption">遇见后海</span></button>
+          <button class="gallery-slide" type="button" data-photo-src="assets/photos/我的背景图.jpg" data-photo-title="我的背景图" aria-label="全幅查看 我的背景图"><img src="assets/photos/我的背景图.jpg" alt="我的背景图摄影作品"><span class="gallery-slide-caption">我的背景图</span></button>
+          <button class="gallery-slide" type="button" data-photo-src="assets/photos/城中城.JPG" data-photo-title="城中城" aria-label="全幅查看 城中城"><img src="assets/photos/城中城.JPG" alt="城中城摄影作品"><span class="gallery-slide-caption">城中城</span></button>
+          <button class="gallery-slide" type="button" data-photo-src="assets/photos/霓虹街巷.jpg" data-photo-title="霓虹街巷" aria-label="全幅查看 霓虹街巷"><img src="assets/photos/霓虹街巷.jpg" alt="霓虹街巷摄影作品"><span class="gallery-slide-caption">霓虹街巷</span></button>
+          <button class="gallery-slide" type="button" data-photo-src="assets/photos/临夜维港.JPG" data-photo-title="临夜维港" aria-label="全幅查看 临夜维港"><img src="assets/photos/临夜维港.JPG" alt="临夜维港摄影作品"><span class="gallery-slide-caption">临夜维港</span></button>
+          <button class="gallery-slide" type="button" data-photo-src="assets/photos/南山以南.JPG" data-photo-title="南山以南" aria-label="全幅查看 南山以南"><img src="assets/photos/南山以南.JPG" alt="南山以南摄影作品"><span class="gallery-slide-caption">南山以南</span></button>
+          <button class="gallery-slide" type="button" data-photo-src="assets/photos/海上通道.JPG" data-photo-title="海上通道" aria-label="全幅查看 海上通道"><img src="assets/photos/海上通道.JPG" alt="海上通道摄影作品"><span class="gallery-slide-caption">海上通道</span></button>
+          <button class="gallery-slide" type="button" data-photo-src="assets/photos/雨夜路口.jpg" data-photo-title="雨夜路口" aria-label="全幅查看 雨夜路口"><img src="assets/photos/雨夜路口.jpg" alt="雨夜路口摄影作品"><span class="gallery-slide-caption">雨夜路口</span></button>
+          <button class="gallery-slide" type="button" data-photo-src="assets/photos/未晚前滩.jpg" data-photo-title="未晚前滩" aria-label="全幅查看 未晚前滩"><img src="assets/photos/未晚前滩.jpg" alt="未晚前滩摄影作品"><span class="gallery-slide-caption">未晚前滩</span></button>
+          <button class="gallery-slide" type="button" data-photo-src="assets/photos/落日汉京.jpg" data-photo-title="落日汉京" aria-label="全幅查看 落日汉京"><img src="assets/photos/落日汉京.jpg" alt="落日汉京摄影作品"><span class="gallery-slide-caption">落日汉京</span></button>
+          <button class="gallery-slide" type="button" data-photo-src="assets/photos/石海山云.JPG" data-photo-title="石海山云" aria-label="全幅查看 石海山云"><img src="assets/photos/石海山云.JPG" alt="石海山云摄影作品"><span class="gallery-slide-caption">石海山云</span></button>
+          <button class="gallery-slide" type="button" data-photo-src="assets/photos/碧绿海岸.JPG" data-photo-title="碧绿海岸" aria-label="全幅查看 碧绿海岸"><img src="assets/photos/碧绿海岸.JPG" alt="碧绿海岸摄影作品"><span class="gallery-slide-caption">碧绿海岸</span></button>
+          </div>
+        </div>
+      </section>
+
+      <section class="world-grid" aria-label="四种观察世界的方式">
+        <button class="world-item world-lens" type="button" data-world="lens">
+          <span>01 · 镜头</span>
+          <h3>把偶然变成一张可以回看的地图</h3>
+          <p>海岸、天桥、雨夜与窗口。点击进入照片背后的注释。</p>
+          <i>进入注释 →</i>
+        </button>
+        <button class="world-item world-writing" type="button" data-world="writing">
+          <span>02 · 笔触</span>
+          <h3>写作不是结论，是把问题留在桌面上</h3>
+          <p>从芯片销售到人与系统，慢慢写出判断的来处。</p>
+          <i>进入注释 →</i>
+        </button>
+        <button class="world-item world-music" type="button" data-world="music">
+          <span>03 · 频率</span>
+          <h3>一首歌，给现实留一条不必解释的出口</h3>
+          <div class="music-wall" aria-hidden="true">
+            <img src="assets/music/陶喆.JPG" alt=""><img src="assets/music/Taylar.png" alt=""><img src="assets/music/钢琴.png.webp" alt=""><img src="assets/music/吉他.jpeg" alt="">
+          </div>
+          <i>进入注释 →</i>
+        </button>
+        <button class="world-item world-poetry" type="button" data-world="poetry">
+          <span>04 · 想象</span>
+          <h3>理想主义，是仍愿意为更远处留一盏灯</h3>
+          <p>诗词与想象不负责给答案，只负责让人继续向前。</p>
+          <i>进入注释 →</i>
+        </button>
+      </section>
+
+      <div class="mission-line">与生俱来的使命是探索世界——通过镜头、通过笔触、通过频率、通过想象。</div>
+
+      <div class="articles" id="logs">
+        <div>
+          <p class="eyebrow">Dyna 的航海日志</p>
+          <h2>行业认知与写作入口</h2>
+        </div>
+        <div class="article-list" id="articleList"></div>
+      </div>
+    </section>
+
+    <section class="bridge bridge-one" aria-hidden="true"><span></span></section>
+
+    <section id="silicon" class="section silicon-section">
+      <div class="silicon-bg" aria-hidden="true"></div>
+      <div class="section-head inverse">
+        <p class="eyebrow">02 · 硅与文明</p>
+        <h2>从人到硅，从兴趣到安身立命</h2>
+        <p>一颗芯片进入系统之前，要经过选择、验证、量产和信任。我的工作，是把抽象的硅，交到真实的机器里。</p>
+      </div>
+
+      <div class="story-track">
+        <article>
+          <b>01</b>
+          <h3>儿时的梦</h3>
+          <p>最早被电子世界吸引，是因为它把不可见的东西变成了可见的结果。电流、屏幕、马达、声音，都像某种被驯服的魔法。</p>
+        </article>
+        <article>
+          <b>02</b>
+          <h3>学业的坚持</h3>
+          <p>真正进入专业学习以后，浪漫会被公式、实验和反复调试磨掉一层。但也正是在那里面，我确认了科技不是幻觉，而是耐心。</p>
+        </article>
+        <article>
+          <b>03</b>
+          <h3>职业的选择</h3>
+          <p>进入半导体行业做销售，代理 MPS 的 BLDC 风扇驱动芯片，是因为我喜欢站在技术、产品和客户之间，把一颗料送到它该去的地方。</p>
+        </article>
+      </div>
+
+      <div id="chip-map" class="chip-map">
+        <div class="map-intro">
+          <p class="eyebrow">价值 × 需求</p>
+          <h2>元器件图鉴</h2>
+          <p>不只看它怎么工作，也看它怎么卖。点击品类，展开它的商业位置。</p>
+        </div>
+        <div class="chip-layers" id="chipLayers"></div>
+      </div>
+
+      <section class="market-matrix" aria-label="半导体价值与需求矩阵">
+        <div class="matrix-head">
+          <div>
+            <p class="eyebrow">商业坐标</p>
+            <h3>价值 × 需求 四象限</h3>
+          </div>
+          <p id="marketInsight" aria-live="polite">点击任一象限，查看不同品类的销售逻辑。</p>
+        </div>
+        <div class="matrix-guide matrix-guide-top"><span>价值量高 ↑</span><span>需求量大 →</span></div>
+        <div class="matrix-grid">
+          <button class="matrix-quadrant niche" type="button" data-quadrant="niche">
+            <b>② 高端利基</b><span>高端 FPGA · SiC/GaN · 高性能光模块</span><small>量小价高，赢在技术判断</small>
+          </button>
+          <button class="matrix-quadrant gold" type="button" data-quadrant="gold">
+            <b>① 黄金象限</b><span>GPU · HBM · 服务器 CPU · 高端 DRAM</span><small>量大价高，赢在规模与关系</small>
+          </button>
+          <button class="matrix-quadrant tail" type="button" data-quadrant="tail">
+            <b>④ 长尾品类</b><span>特殊模拟 · 定制分立 · 冷门传感器</span><small>量小价低，不争也是策略</small>
+          </button>
+          <button class="matrix-quadrant volume" type="button" data-quadrant="volume">
+            <b>③ 基础走量</b><span>MCU · PMIC · MOSFET · MLCC</span><small>量大价低，赢在供应稳定</small>
+          </button>
+        </div>
+        <div class="matrix-guide matrix-guide-bottom"><span>需求量小 ←</span><span>价值量低 ↓</span></div>
+        <details class="bldc-note">
+          <summary>我每天都在 ③ 象限</summary>
+          <p>BLDC 风扇驱动芯片属于模拟芯片中的驱动芯片。单颗价值不高，但量大、需求稳，真正的壁垒在于读懂客户的设计周期与电机匹配。</p>
+        </details>
+      </section>
+
+      <div class="civilization" id="civilization">
+        <canvas id="latticeCanvas" aria-hidden="true"></canvas>
+        <div>
+          <p class="eyebrow">当文明重新建立</p>
+          <h2>下一代文明，将直接建立在硅基之上。</h2>
+          <p>手机、电脑、汽车、电网，人类文明的每一层都跑在芯片上。AI、万物互联、自动驾驶，让硅不再只是工具，而成为底层土壤。我们正在目睹一次文明基础设施的更换，而我做的工作，是往这个地基里放了一小块砖。</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="bridge bridge-two" aria-hidden="true"><span></span></section>
+
+    <section id="free" class="section free-section">
+      <canvas id="particleCanvas" aria-hidden="true"></canvas>
+      <div class="section-head free-head">
+        <p class="eyebrow">03 · 纯粹空间</p>
+        <h2>这里没有规则</h2>
+        <p>可玩、可停留、可清空。秩序会短暂出现，然后重新散开。</p>
+      </div>
+
+      <div class="playground">
+        <section class="ripple-zone" aria-label="半导体元器件格局沙盘">
+          <div class="map-shell" id="rippleStage">
+            <div class="map-core">
+              <span>元器件格局</span>
+              <strong>IC · 分立 · 光电 · 被动</strong>
+            </div>
+            <div class="semi-map" id="semiMap"></div>
+          </div>
+          <div class="ripple-copy" id="rippleCopy">点击任意模块，看它在电子系统中的位置。</div>
+        </section>
+
+        <section class="quiz-zone" id="chip-quiz">
+          <div class="quiz-head">
+            <p class="eyebrow">你的芯片人格</p>
+            <h3>回答四题，解锁你的芯片人格卡</h3>
+          </div>
+          <div id="quiz"></div>
+          <div class="personality-deck" id="personalityDeck" aria-label="芯片人格卡组"></div>
+        </section>
+
+        <section class="writing-zone guestbook-zone" id="quiet-writing" aria-label="纯粹空间留言栏">
+          <div class="guestbook-head">
+            <div>
+              <p class="eyebrow">留一行字</p>
+              <h3>不必被立刻回答的留言栏</h3>
+            </div>
+            <div class="noise-controls" aria-label="环境音与文字工具">
+              <button class="icon-button" id="rainBtn" title="雨声">雨</button>
+              <button class="icon-button" id="keysBtn" title="键盘声">键</button>
+              <button class="icon-button" id="fanBtn" title="风扇声">风</button>
+              <button class="icon-button" id="clearNote" title="清除文字">清</button>
+            </div>
+          </div>
+          <p class="guestbook-purpose">这里不是评论区，也不急着交换答案。它留给路过的人，写下一句此刻想带走、也想留下的话。</p>
+          <div class="guestbook-identity">
+            <label>姓名<input id="guestName" type="text" value="王泽巨"></label>
+            <label>邮箱<input id="guestEmail" type="email" value="320749629@qq.com"></label>
+            <label>抖音 IP<input id="guestIp" type="text" value="Dyna的航海日记" readonly></label>
+          </div>
+          <textarea id="quietNote" aria-label="自由书写空间">有些答案不在远方，它们在你愿意停下来倾听的那一刻。</textarea>
+          <p class="guestbook-quote">“所有抵达，都是先允许自己出发。”</p>
+        </section>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <strong>Dyna</strong>
+    <a href="mailto:320749629@qq.com">320749629@qq.com</a>
+    <a href="https://www.douyin.com/" target="_blank" rel="noreferrer">Dyna的航海日志 · 抖音</a>
+  </footer>
+
+
+
+  <dialog id="worldDialog" class="world-dialog" aria-label="世界观察方式注释">
+    <button id="closeWorldDialog" class="dialog-close" type="button" aria-label="关闭注释">×</button>
+    <p class="eyebrow" id="worldDialogKicker"></p>
+    <h2 id="worldDialogTitle"></h2>
+    <div class="world-dialog-media" id="worldDialogMedia"></div>
+    <article id="worldDialogBody"></article>
+  </dialog>
+
+  <dialog id="photoDialog" class="photo-dialog" aria-label="摄影作品全幅查看">
+    <button id="closePhotoDialog" class="dialog-close" type="button" aria-label="关闭照片">×</button>
+    <div class="photo-dialog-frame"><img id="photoDialogImage" alt=""></div>
+    <p id="photoDialogCaption" class="photo-dialog-caption"></p>
+  </dialog>
+
+  <dialog id="chipDialog" class="chip-dialog">
+    <button id="closeDialog" class="dialog-close" aria-label="关闭">×</button>
+    <p class="eyebrow" id="dialogLayer"></p>
+    <h3 id="dialogTitle"></h3>
+    <p id="dialogDesc"></p>
+    <dl>
+      <div><dt>在哪用</dt><dd id="dialogUse"></dd></div>
+      <div><dt>知名厂商</dt><dd id="dialogMakers"></dd></div>
+    </dl>
+    <p class="dyna-note" id="dialogNote"></p>
+  </dialog>
+
+  <dialog id="articleDialog" class="article-dialog">
+    <button id="closeArticle" class="dialog-close" aria-label="关闭文章">×</button>
+    <p class="eyebrow" id="articleCategory"></p>
+    <h2 id="articleTitle"></h2>
+    <article id="articleBody"></article>
+  </dialog>
+
+  <script src="articles.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
